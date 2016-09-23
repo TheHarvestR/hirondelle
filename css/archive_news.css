@@ -1,0 +1,53 @@
+body.archive {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.titre-archive {
+	color: #079eb2;
+	font: bold 16px arial, sans-serif;
+	text-align: left;
+	border-bottom: #666666 0px solid;
+}
+.texte-archive	{
+	color: #000000;
+	font: normal 16px arial, sans-serif;
+	text-align: justify;
+}
+.date-archive {
+	color: #505050;
+	font: italic 15px arial, sans-serif;
+	text-align: right;
+	border-bottom: #666666 0px solid;
+}
+.titre-table {
+	color: #ffffff;
+	font: bold 17px arial, sans-serif;
+}
+		
+table {
+	margin: 0 0 0 0;
+	width: 900px;
+	border-collapse: collapse;
+	border: 1px solid #0F0F0F;
+}
+th {
+	background: #434343;
+	text-align: left;
+	padding-left: 12;
+	height: 30px;
+}
+tr {
+	display: table-row;
+	background: #ffffff;
+	border: 1px solid #aaa;
+}
+td {
+	height: 85px;
+	vertical-align: middle;
+	padding: 6px 12px;
+  }
+
+

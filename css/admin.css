@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'anonymous_pro';
+    src: url('../img/anonymous_pro-webfont.ttf'),
+		 url('../img/anonymous_pro-webfont.eot'),
+         url('../img/anonymous_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/anonymous_pro-webfont.woff') format('woff'),
+         url('../img/anonymous_pro-webfont.svg#anonymous_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  color: #3b3b3b;
+  background: #2b2b2b;
+
+}
+
+#entete {
+	font-family: 'Helvetica Neue', Helvetica, Arial;
+	color: #ffffff;
+	font-size: 25px;
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 800px;
+}
+
+table {
+  margin: 0px;
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+tr {
+	background: #f6f6f6;
+	font-size: 16px;
+	cursor: pointer; cursor: hand;
+}
+tr:hover {
+	background: url("../img/gvert.png") repeat-x;
+}
+tr:nth-of-type(odd) {
+	background: #e9e9e9;
+}
+tr:nth-of-type(odd):hover {
+	background: url("../img/gvert.png") repeat-x;
+}
+th {
+	color: #ffffff;
+	background: url("../img/gbleu.png") repeat-x;
+	font-size: 16px;
+	padding: 6px 12px;
+	cursor: auto;
+}
+td {
+  padding: 6px 12px;
+}
+.cellc {
+  padding: 6px 12px;
+  text-align: center;
+}
+#bleu {
+	color: blue;
+}
+
+#rouge {
+	color: maroon;
+}
+
+#vert {
+	color: green;
+}
+.pied {
+	color: #ffffff;
+	background: url("../img/gbleu29.png") repeat-x;
+	font-size: 14px;
+	padding: 6px 12px;
+	cursor: auto;
+}
+#aide {
+	text-align:right;
+	cursor: pointer; cursor: hand;
+	text-decoration: underline;
+}
+
+.masque {
+	display: none;
+}
+
+/* Apparence bouton */
+.hot-container p { margin-top: 3px; }
+a { text-decoration: none; margin: 0px; }
+
+.hot-container {
+	text-align: center;
+}
+
+#btnnew, #btnarchives {
+	display: inline-block;
+	color: #666;
+	background-color: #eee;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+	margin: 0 0 8px;
+	cursor: pointer;
+}
+
+#btnnew:hover, #btnarchives:hover {
+	background-color: #e3e3e3;
+	border-color: rgba(0,0,0,0.5);
+}
+
+#btnnew:active, #btnarchives:active {
+	background-color: #CCC;
+	border-color: rgba(0,0,0,0.9);
+}
+
+/* Styles pour le formulaire */
+
+h1,
+h2,
+h3,
+ul,
+ol,
+p {
+  margin: 5px; 
+}
+
+.uni-form {
+  margin: 5px 0;
+  padding-top: 1px;
+}
+
+.uni-form * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.uni-form-wrap {
+  max-width: 400px;
+  background: #fff;
+  margin: 0px auto;
+  padding: 0 12px 0 12px;
+  border-radius: 12px;
+  display: none;
+  z-index: 75;
+  top:60px;
+  position: absolute;
+  box-shadow: 4px 4px 6px black;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.uni-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.uni-form .ctrl-holder {
+  padding: 5px 5px 8px 5px;
+  border: 1px solid #efefef;
+  border-width: 1px 0 0 0;
+}
+ .uni-form:after,
+ .uni-form .button-holder:after,
+ .uni-form .ctrl-holder:after,
+ .uni-form-row:after {
+   content: ".";
+   display: block;
+   height: 0;
+   line-height: 0;
+   font-size: 0;
+   clear: both;
+   min-height: 0;
+   visibility: hidden;
+ }
+
+.uni-form button {
+  cursor: pointer;
+}
+
+.uni-form .ctrl-holder > label,
+.uni-form .ctrl-holder > .label {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: blue;
+}
+
+#externe {
+  color: black;
+  padding: 5px 0;
+}
+
+.uni-form .ctrl,
+.uni-form .input-text,
+.uni-form .input-file,
+.uni-form .input-select {
+  float: left;
+  width: 100%; /* 2% for spacing */
+  margin: 0;
+  font-size: 16px;
+}
+
+.uni-form .input-textarea {
+  float: left;
+  width: 100%; /* 2% for spacing */
+  margin: 0;
+  font-family: anonymous_pro;
+  font-size: 18px;
+}
+
+.uni-form .ctrl {
+  padding-right: 3%;
+}
+
+.uni-form .button-holder {
+  text-align: center;
+  background: #efefef;
+  margin-top: 0px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.uni-form label + .input-text,
+.uni-form label + .input-file,
+.uni-form label + .input-select,
+.uni-form label + .input-textarea {
+  margin-top: .5em;
+}
+
+.uni-form .small {
+  width: 30% !important
+}
+
+.uni-form .large {
+  float: none;
+  display: block;
+  width: 100% !important;
+  font-size: 16px;
+}
+
+.uni-form .auto {
+  width: auto !important;
+  height: auto !important;
+  display: inline-block !important;
+  float: none !important;
+}
+
+.uni-form .small + input,
+.uni-form .large + input,
+.uni-form .auto + input,
+.uni-form .small + select,
+.uni-form .auto + select {
+  margin-right: 4px !important;
+}
+
+.uni-form .input-text,
+.uni-form .input-textarea {
+  padding: 5px;
+  border: 1px solid #aaa;
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.15) inset;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.15) inset;
+}
+
+.uni-form .input-text:focus,
+.uni-form .input-textarea:focus {
+  border-color: #343434;
+  outline: none;
+}
+
+.uni-form .input-textarea {
+  height: 12em;
+}
+
+.uni-form .input-disabled {
+  background-color: #f4f4f4;
+  border-color: #ccc;
+  color: #999;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.uni-form .action-primary {
+  padding: 1em 2em;
+  line-height: 1;
+  background: #254a86;
+  border: 1px solid #163362;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+  text-shadow: -1px -1px 0 rgba(0,0,0,.25);
+  margin: 0 5px; 
+}
+
+.uni-form .action-primary:focus,
+.uni-form .action-primary:hover {
+  background: #2b58a1;
+}
+
+.uni-form .action-primary:active {
+  background: #1d3c6d;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5) inset;
+  box-shadow: 0 1px 3px rgba(0,0,0,.5) inset;
+}
+
+#suppr{
+	background: #e01717;
+}
+
+textarea {
+   resize: none;
+}
+
+.noir {
+	color: black;
+}
+
+/* Effet fenêtre modale */
+#mask {
+z-index: 50;
+background-color: #000000;
+position: fixed;
+left: 0;
+top: 0;
+opacity: .5;
+filter: Alpha(Opacity=50); /* support: IE8 */
+}
+
+/* Modification valeurs jQuery UI */
+.dlg-no-close .ui-dialog-titlebar-close {
+	display: none;
+}
+.dlg-no-title .ui-dialog-titlebar {
+	display: none;
+}
+
+.ui-widget-overlay {
+	background: #000000;
+	opacity: 0;
+	filter: Alpha(Opacity=0); /* support: IE8 */
+}
